@@ -1,0 +1,7 @@
+const gvt = artifacts.require("gvt");
+const owner  = "0x1c1371b7FC99e620F4557a46b1906afcc645e026" ; // TODO: Replace me
+
+module.exports = async function(deployer) {
+  // Deploy Token
+  await deployer.deploy(gvt);
+  const gvt = await gvt.deployed()
